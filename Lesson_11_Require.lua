@@ -17,17 +17,17 @@ print(v1)
 F1()
 print(v1)
 print('************多脚本执行***************')
-require('Lesson_10_Test')
+require('Lesson_11_Test')
 print(test1)
 print(localtest2)
 print('************脚本卸载***************')
-require('Lesson_10_Test')
+require('Lesson_11_Test')
 -- 判断脚本是否已经加载
-print(package.loaded['Lesson_10_Test'])
+print(package.loaded['Lesson_11_Test'])
 -- 卸载脚本
-package.loaded['Lesson_10_Test'] = nil
-print(package.loaded['Lesson_10_Test'])
-s = require('Lesson_10_Test')
+package.loaded['Lesson_11_Test'] = nil
+print(package.loaded['Lesson_11_Test'])
+s = require('Lesson_11_Test')
 print(s)
 print('************大G表(总表)***************')
 -- 大G表 存储着所有的全局变量
