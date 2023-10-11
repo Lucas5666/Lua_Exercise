@@ -10,10 +10,16 @@ a.name = 'Lucas'
 print(a['name'])
 a['2'] = 2
 print(a['2'])
+-- 删除
 a['1'] = nil
 print('************字典遍历***************')
 for i,j in pairs(a) do
 print(i..'_'..j)
+end
+
+for i,j in pairs(a) do
+print(j)
+--print(a[i])
 end
 
 
