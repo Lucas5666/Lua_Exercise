@@ -1,0 +1,25 @@
+print('************自带库***************')
+
+print('************时间***************')
+print(os.time())
+local t = os.date('*t')
+for i,k in pairs(t) do
+print(i,k)
+end
+print(t.day)
+print('************数学类***************')
+print(math.abs(-11))
+print(math.deg(math.pi))
+print(math.cos(math.pi))
+print(math.floor(2.8))
+print(math.ceil(2.2))
+print(math.max(1,5))
+print(math.min(3,8))
+print(math.modf(3.66))
+print(math.pow(2,10))
+math.randomseed(os.time())
+print(math.random(100))
+print(math.sqrt(4))
+print('************路径***************')
+print(package.path)
+
