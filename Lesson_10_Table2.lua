@@ -62,5 +62,58 @@ end
 Student.Speak2()
 
 Student.Up()
-
-
+print('************表的公共操作***************')
+t1 = {{age = 1,name = 'Cai'},{age = 2,name = 'Lu'}}
+t2 = {name = 'Lucas',sex = true}
+print(#t1)
+-- 插入指定元素
+table.insert(t1,t2)
+print(#t1)
+for i = 1,#t1 do
+    k = t1[i]
+    for k,j in pairs(k) do
+    print(k,j)
+    end
+end
+print('************Line***************')
+--移除元素
+-- remove 默认移除最后一个元素
+table.remove(t1)
+print(#t1)
+for i = 1,#t1 do
+    k = t1[i]
+    for k,j in pairs(k) do
+    print(k,j)
+    end
+end
+-- remove 移除指定元素
+table.remove(t1,1)
+print(#t1)
+for i = 1,#t1 do
+    k = t1[i]
+    for k,j in pairs(k) do
+    print(k,j)
+    end
+end
+print('************Line***************')
+t2 = {2.4,6,2,3,9,1}
+table.sort(t2)
+for i,j in pairs(t2) do
+print(j)
+end
+print('************Line***************')
+table.sort(t2,function(a,b)
+if a > b then
+    return true
+end
+end)
+for i,j in pairs(t2) do
+    print(j)
+end
+print('************拼接***************')
+t3 = {'123','456','789'}
+s = table.concat(t3,'_')
+for i,j in pairs(t3) do
+    print(j)
+end
+print(s)
